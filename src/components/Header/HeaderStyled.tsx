@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 const HeaderStyled = styled.header`
   background-color: ${({ theme }) => theme.colors.secondary};
-  padding: 15px 10px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.main};
+  padding: 15px 0px;
   text-align: center;
   letter-spacing: -1px;
 
   .header {
     &__title {
       font-family: ${({ theme }) => theme.typography.fontLogo};
-      font-size: 28px;
+      border-bottom: 1px solid ${({ theme }) => theme.colors.main};
+      padding-bottom: 10px;
+      font-size: 30px;
       font-weight: 700;
     }
   }
