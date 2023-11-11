@@ -30,8 +30,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  img {
-    max-width: 100%
+  button {
+    border: none;
+    font: inherit;
+    background-color: inherit;
   }
 `;
 

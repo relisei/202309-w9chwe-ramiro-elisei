@@ -9,11 +9,13 @@ const NavigationStyled = styled.nav`
       justify-content: center;
       gap: 30px;
     }
+
     &__element {
       font-size: 18px;
       letter-spacing: -0.5px;
     }
   }
+
   .active {
     text-decoration: underline;
     padding-top: 2px;
