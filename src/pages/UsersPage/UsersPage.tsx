@@ -1,13 +1,22 @@
-import React from "react";
+import { useEffect } from "react";
 import PageStyled from "./UsersPageStyled";
 import UserList from "../../components/UserList/UserList";
-import mockUsers from "../../mocks/mockData";
+import { useDispatch, useSelector } from "react-redux";
+import { getUsers } from "../../store/features/users/usersSlice";
+import { AppDispatch, StateStructure } from "../../store";
 
-const UsersPage = (): React.ReactElement => {
+const UsersPage = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const { list } = useSelector((state: StateStructure) => state.users);
+
+  useEffect(() => {
+    dispatch(getUsers());
+  }, [dispatch]);
+
   return (
     <PageStyled className="user-page">
       <h2 className="user-page__title">Friend or Foe?</h2>
-      <UserList users={mockUsers} />
+      <UserList users={list} />
     </PageStyled>
   );
 };
