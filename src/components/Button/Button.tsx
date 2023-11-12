@@ -1,3 +1,5 @@
+import ButtonStyled from "./ButtonStyled";
+
 interface ButtonProps {
   type: "button" | "submit";
   actionOnclick?: () => void;
@@ -12,12 +14,12 @@ const Button = ({
   actionOnclick,
 }: ButtonProps): React.ReactElement => {
   return (
-    <button
+    <ButtonStyled
       type={type}
       onClick={actionOnclick}
       children={text}
       className={className}
-    ></button>
+    ></ButtonStyled>
   );
 };
 

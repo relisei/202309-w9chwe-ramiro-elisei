@@ -1,4 +1,5 @@
 import { UserStructure } from "../../store/features/users/types";
+import Button from "../Button/Button";
 import UserCardStyled from "./UserCardStyled";
 
 interface UserCardProps {
@@ -23,6 +24,12 @@ const UserCard = ({
           <span className="user-card__fullname">
             {firstName} {lastName}
           </span>
+          <Button
+            className="card__button"
+            text="Friend"
+            type="button"
+            actionOnclick={() => onclick}
+          />
         </div>
         <span className="user-card__age">
           <span className="user-card__property">Age: </span>
