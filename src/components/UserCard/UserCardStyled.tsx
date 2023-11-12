@@ -10,7 +10,7 @@ const UserCardStyled = styled.article`
 
   .user-card {
     &__nickname {
-      font-size: 21px;
+      font-size: 24px;
       padding-top: 20px;
       padding-bottom: 10px;
     }
