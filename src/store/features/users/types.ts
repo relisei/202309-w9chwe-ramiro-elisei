@@ -10,5 +10,5 @@ export interface UserStructure {
 }
 
 export interface UsersStateStructure {
-  users: UserStructure[];
+  list: UserStructure[];
 }
