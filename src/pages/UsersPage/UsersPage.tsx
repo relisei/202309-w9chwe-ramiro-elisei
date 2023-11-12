@@ -13,10 +13,11 @@ const UsersPage = () => {
     dispatch(getUsers());
   }, [dispatch]);
 
+  console.log("list", list);
   return (
     <PageStyled className="user-page">
       <h2 className="user-page__title">Friend or Foe?</h2>
-      <UserList users={list} />
+      <UserList users={[]} />
     </PageStyled>
   );
 };
