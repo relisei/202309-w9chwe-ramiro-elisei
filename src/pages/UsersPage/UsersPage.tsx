@@ -17,7 +17,7 @@ const UsersPage = () => {
   return (
     <PageStyled className="user-page">
       <h2 className="user-page__title">Friend or Foe?</h2>
-      <UserList users={[]} />
+      <UserList users={list} />
     </PageStyled>
   );
 };
