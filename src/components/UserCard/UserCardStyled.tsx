@@ -4,13 +4,13 @@ const UserCardStyled = styled.article`
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 300px;
+  width: auto;
   padding-top: 30px;
   margin: 0 auto;
 
   .user-card {
     &__nickname {
-      font-size: 25px;
+      font-size: 21px;
       padding-top: 20px;
       padding-bottom: 10px;
     }
@@ -24,6 +24,12 @@ const UserCardStyled = styled.article`
       text-align: left;
       display: flex;
       flex-direction: column;
+    }
+
+    &__picture {
+      min-width: 280px;
+      width: auto;
+      height: auto;
     }
 
     &__header-information {
@@ -41,7 +47,7 @@ const UserCardStyled = styled.article`
     &__age {
       padding-bottom: 15px;
       font-size: 18px;
-      color: #5f5f5f;
+      color: #777676;
     }
 
     &__aboutme {
