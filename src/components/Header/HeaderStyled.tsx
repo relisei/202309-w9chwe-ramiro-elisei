@@ -9,7 +9,7 @@ const HeaderStyled = styled.header`
   .header {
     &__title {
       font-family: ${({ theme }) => theme.typography.fontLogo};
-      border-bottom: 1px solid ${({ theme }) => theme.colors.main};
+      border-bottom: 0.5px solid ${({ theme }) => theme.colors.main};
       padding-bottom: 10px;
       font-size: 30px;
       font-weight: 700;
